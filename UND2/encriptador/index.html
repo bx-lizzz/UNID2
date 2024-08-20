@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <div class="divtitulo"> 
+      <h1>Emojix: Descifrando el Lenguaje Secreto de Emojis</h1>
+  </div>
+  <div class="container">
+      <div class="encriptar">
+          <input type="text" class="texto" id="inputText" placeholder="Escribe tu mensaje aquí...">
+
+          <div class="terminos">
+              <p>Solo letras minúsculas y sin acentos.</p>
+          </div>
+
+          <div class="botones">
+              <button class="btn-encriptar" type="button" onclick="encryptMessage()">Encriptar 🔐</button>
+              <button class="btn-desencriptar" type="button" onclick="decryptMessage()">Desencriptar 🔓</button>
+          </div>
+      </div>
+
+      <div class="encriptado">
+          <img src="emoji-smiley.gif" alt="" id="muñeco" />
+          <div class="mensaje-encriptado" id="mensaje-encriptado">
+              <div class="categorias">
+                  <p class="categori" id="categori">Categoría</p>
+                  <select id="emojiCategory" class="emoji">
+                      <option value="animals">Animales</option>
+                      <option value="food">Comida</option>
+                      <option value="sports">Deportes</option>
+                      <option value="faces">Caras</option>
+                  </select>
+            </div>
+
+              <div class="Desplazamiento">
+                <label for="shift" class="movimiento">Desplazamiento:</label>
+                <input type="number" id="shift" class="numero" value="3" min="-25" max="25">
+              </div>
+
+              <h2 id="titulo-mensaje" class="titulo-mensaje">No se encontro ningun mensaje</h2>
+              <p id="parrafo" class="parrafo">
+                  Ingresa el texto que deseas encriptar.
+              </p>
+          </div>
+      </div>
+  </div>
+  <footer class="derechos">
+    <h2>Código Femenino</h2>
+    <p>¡Impulsando la innovación femenina en el mundo del código!</p>
+    <p>&copy; 2024 Código Femenino. Todos los derechos reservados.</p>
+  </footer>
+  <script src="js/script.js"></script>
+  </body>
+  
+</html>
